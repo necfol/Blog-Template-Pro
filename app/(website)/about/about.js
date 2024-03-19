@@ -10,11 +10,13 @@ export default function About({ authors, settings }) {
         About
       </h1>
       <div className="text-center">
-        <p className="text-lg">We are a small passionate team.</p>
+        <p className="text-lg">I am a passionate developer.</p>
       </div>
 
       <div className="grid grid-cols-3 gap-5 mt-6 mb-16 md:mt-16 md:mb-32 md:gap-16">
-        {authors.slice(0, 3).map(author => {
+        <div />
+        {authors.slice(0, 1).map(author => {
+        // {authors.slice(0, 3).map(author => {
           const imageProps = urlForImage(author?.image) || null;
           return (
             <div
@@ -32,19 +34,26 @@ export default function About({ authors, settings }) {
             </div>
           );
         })}
+        <div />
       </div>
 
       <div className="mx-auto prose text-center dark:prose-invert mt-14">
         <p>
-          We provide real-time connectivity to enable software
-          providers and financial institutions to build integrated
-          products for their small business customers.
+        Throughout my career, I have successfully completed numerous Full-Stack development, 
+        Front-End development, Node.js development, React Native development, Nginx deployment, 
+        ranging from small customizations to full-scale implementations.With a robust professional background spanning six years at Alibaba,
+         I bring a wealth of technical expertise and skills into the project.
         </p>
         <p>
-          Our API infrastructure is leveraged by clients ranging from
-          lenders to corporate card providers and business forecasting
-          tools, with use cases including automatic reconciliation,
-          business dashboarding, and loan decisioning.
+        I have a solid foundation in front-end technologies such as HTML, CSS, Chrome extension, 
+        Puppeteer and JavaScript, as well as expertise in popular frameworks like React and Vue. 
+        On the back-end, I am experienced in working with languages like Node.js, along with frameworks like Koa & express & Next.js.
+        </p>
+        <p>
+          My full-stack development skills allow me to create end-to-end solutions, 
+          ensuring seamless integration between the front-end and back-end components. 
+          I am experienced in developing robust APIs, implementing responsive and user-friendly interfaces, 
+          and handling complex data structures.
         </p>
         <p>
           <Link href="/contact">Get in touch</Link>

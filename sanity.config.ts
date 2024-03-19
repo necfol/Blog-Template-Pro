@@ -1,7 +1,7 @@
 /*
  * @LastEditors: Necfol
  * @Date: 2024-03-19 18:49:40
- * @LastEditTime: 2024-03-19 18:55:50
+ * @LastEditTime: 2024-03-19 23:39:59
  * @FilePath: /portfolio-pro/sanity.config.ts
  */
 import { defineConfig } from "sanity";
@@ -27,7 +27,7 @@ export const PREVIEWABLE_DOCUMENT_TYPES: string[] = ["post"];
 
 export default defineConfig({
   name: "default",
-  title: "Stablo Template",
+  title: "Terpampas",
   basePath: "/studio",
   projectId: projectId,
   dataset: dataset,

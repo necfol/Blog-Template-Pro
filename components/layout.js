@@ -1,3 +1,9 @@
+/*
+ * @LastEditors: Necfol
+ * @Date: 2024-03-19 18:49:40
+ * @LastEditTime: 2024-03-19 23:37:46
+ * @FilePath: /portfolio-pro/components/layout.js
+ */
 import React from "react";
 import Head from "next/head";
 import { NextSeo } from "next-seo";
@@ -38,8 +44,8 @@ export default function Layout(props) {
           site_name: props.title
         }}
         twitter={{
-          handle: "@surjithctly",
-          site: "@surjithctly",
+          handle: "@NeoJustGo",
+          site: "@NeoJustGo",
           cardType: "summary_large_image"
         }}
       />

@@ -1,3 +1,9 @@
+/*
+ * @LastEditors: Necfol
+ * @Date: 2024-03-19 18:49:40
+ * @LastEditTime: 2024-03-20 00:09:13
+ * @FilePath: /portfolio-pro/app/(website)/author/[author]/page.js
+ */
 import Author from "./author";
 
 import { getAllAuthorsSlugs, getAuthorPostsBySlug } from "@/lib/sanity/client";
@@ -22,4 +28,4 @@ export default async function AuthorPage({ params }) {
   return <Author posts={posts} author={author} />;
 }
 
-// export const revalidate = 60;
+export const revalidate = 60;

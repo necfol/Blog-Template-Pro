@@ -1,3 +1,9 @@
+/*
+ * @LastEditors: Necfol
+ * @Date: 2024-03-19 18:49:40
+ * @LastEditTime: 2024-03-20 00:09:25
+ * @FilePath: /portfolio-pro/app/(website)/layout.tsx
+ */
 import "@/styles/tailwind.css";
 import { Providers } from "./providers";
 import { cx } from "@/utils/all";
@@ -19,7 +25,6 @@ const lora = Lora({
 
 export async function sharedMetaData(params) {
   const settings = await getSettings();
-
   return {
     // metadataBase: new URL(settings.url),
     title: {
@@ -78,4 +83,5 @@ export default async function Layout({ children, params }) {
   );
 }
 
-export const revalidate = 86400;
+export const revalidate = 60;
+// export const revalidate = 86400;
