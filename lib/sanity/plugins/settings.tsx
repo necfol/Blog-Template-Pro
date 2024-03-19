@@ -1,3 +1,9 @@
+/*
+ * @LastEditors: Necfol
+ * @Date: 2024-03-19 18:49:40
+ * @LastEditTime: 2024-03-19 18:55:49
+ * @FilePath: /portfolio-pro/lib/sanity/plugins/settings.tsx
+ */
 /**
  * This plugin contains all the logic for setting up the singletons
  */
@@ -7,7 +13,8 @@
 //   previewSecretId,
 // } from "@/lib/sanity/config";
 import { type DocumentDefinition } from "sanity";
-import { type StructureResolver } from "sanity/desk";
+// import { type StructureResolver } from "sanity/desk";
+import type { StructureResolver } from 'sanity/structure';
 
 export const singletonPlugin = (types: string[]) => {
   return {
