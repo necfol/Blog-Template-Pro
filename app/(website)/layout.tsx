@@ -1,8 +1,8 @@
 /*
  * @LastEditors: Necfol
  * @Date: 2024-03-19 18:49:40
- * @LastEditTime: 2024-03-20 00:09:25
- * @FilePath: /portfolio-pro/app/(website)/layout.tsx
+ * @LastEditTime: 2024-03-20 12:11:34
+ * @FilePath: /Blog-Template-Pro/app/(website)/layout.tsx
  */
 import "@/styles/tailwind.css";
 import { Providers } from "./providers";
@@ -12,6 +12,7 @@ import { getSettings } from "@/lib/sanity/client";
 import Footer from "@/components/footer";
 import GetNavbar from "@/components/getnavbar";
 import { urlForImage } from "@/lib/sanity/image";
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -78,6 +79,7 @@ export default async function Layout({ children, params }) {
           <div>{children}</div>
           <Footer {...settings} />
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
