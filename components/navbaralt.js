@@ -27,7 +27,7 @@ export default function NavbarAlt(props) {
     },
     {
       label: "Search",
-      href: "/search?q=life",
+      href: "/search",
     },
     {
       label: "About",

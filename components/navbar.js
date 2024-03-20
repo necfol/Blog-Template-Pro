@@ -28,7 +28,7 @@ export default function Navbar(props) {
   const rightmenu = [
     {
       label: "Search",
-      href: "/search?q=life",
+      href: "/search",
     },
     {
       label: "About",
