@@ -6,6 +6,8 @@ import { PortableText } from "@/lib/sanity/plugins/portabletext";
 import { urlForImage } from "@/lib/sanity/image";
 import { parseISO, format } from "date-fns";
 import AuthorCard from "@/components/blog/authorCard";
+import WalineComment from '@/components/comment';
+
 
 export default function Post(props) {
   const { loading, post } = props;
@@ -106,6 +108,10 @@ export default function Post(props) {
           {post.author && <AuthorCard author={post.author} />}
         </article>
       </Container>
+      <Container>
+        <WalineComment />
+      </Container>
+
     </>
   );
 }

@@ -1,7 +1,14 @@
+/*
+ * @LastEditors: Necfol
+ * @Date: 2024-03-20 10:38:37
+ * @LastEditTime: 2024-03-20 11:13:16
+ * @FilePath: /Blog-Template-Pro/app/(website)/about/about.js
+ */
 import Container from "@/components/container";
 import { urlForImage } from "@/lib/sanity/image";
 import Image from "next/image";
 import Link from "next/link";
+import WalineComment from '@/components/comment';
 
 export default function About({ authors, settings }) {
   return (
@@ -59,6 +66,7 @@ export default function About({ authors, settings }) {
           <Link href="/contact">Get in touch</Link>
         </p>
       </div>
+      <WalineComment />
     </Container>
   );
 }
