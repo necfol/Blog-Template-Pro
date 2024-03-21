@@ -61,7 +61,7 @@ export default function Contact({ settings }) {
           </h2>
           <p className="max-w-sm mt-5">
             Have something to say? I am here to help. Fill up the
-            form or send email or call phone.
+            form or send email.
           </p>
 
           <div className="mt-5">
