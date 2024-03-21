@@ -1,11 +1,11 @@
 /*
  * @LastEditors: Necfol
  * @Date: 2024-03-20 10:38:37
- * @LastEditTime: 2024-03-21 14:45:56
+ * @LastEditTime: 2024-03-21 14:58:30
  * @FilePath: /Blog-Template-Pro/lib/sanity/config.ts
  */
-// export const useCdn = process.env.NODE_ENV === "production";
-export const useCdn = false;
+export const useCdn = process.env.NODE_ENV === "production";
+// export const useCdn = false;
 
 /**
  * As this file is reused in several other files, try to keep it lean and small.
