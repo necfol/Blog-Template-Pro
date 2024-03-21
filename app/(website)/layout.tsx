@@ -1,7 +1,7 @@
 /*
  * @LastEditors: Necfol
  * @Date: 2024-03-19 18:49:40
- * @LastEditTime: 2024-03-20 12:11:34
+ * @LastEditTime: 2024-03-21 17:09:41
  * @FilePath: /Blog-Template-Pro/app/(website)/layout.tsx
  */
 import "@/styles/tailwind.css";
@@ -30,15 +30,14 @@ export async function sharedMetaData(params) {
     // metadataBase: new URL(settings.url),
     title: {
       default:
-        settings?.title ||
-        "Stablo Pro - Blog Template for Next.js & Sanity CMS",
-      template: "%s | Stablo"
+        settings?.title || "",
+      template: "%s | Neo Fang"
     },
     description:
       settings?.description ||
-      "Pro version of Stablo, popular open-source next.js and sanity blog template",
+      "",
     keywords: ["Next.js", "Sanity", "Tailwind CSS"],
-    authors: [{ name: "Surjith" }],
+    authors: [{ name: "Neo Fang" }],
     canonical: settings?.url,
     openGraph: {
       images: [
