@@ -1,7 +1,7 @@
 /*
  * @LastEditors: Necfol
  * @Date: 2024-03-19 18:49:40
- * @LastEditTime: 2024-03-21 17:09:41
+ * @LastEditTime: 2024-03-21 17:16:19
  * @FilePath: /Blog-Template-Pro/app/(website)/layout.tsx
  */
 import "@/styles/tailwind.css";
@@ -44,7 +44,7 @@ export async function sharedMetaData(params) {
         {
           url:
             urlForImage(settings?.openGraphImage)?.src ||
-            "/img/opengraph.jpg",
+            "/img/opengraph.png",
           width: 800,
           height: 600
         }
