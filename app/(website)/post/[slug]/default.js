@@ -8,6 +8,7 @@ import { parseISO, format } from "date-fns";
 
 import CategoryLabel from "@/components/blog/category";
 import AuthorCard from "@/components/blog/authorCard";
+import WalineComment from '@/components/comment';
 
 export default function Post(props) {
   const { loading, post } = props;
@@ -103,6 +104,9 @@ export default function Post(props) {
           </div>
           {post.author && <AuthorCard author={post.author} />}
         </article>
+      </Container>
+      <Container>
+        <WalineComment />
       </Container>
     </>
   );

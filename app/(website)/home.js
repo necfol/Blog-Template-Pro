@@ -1,7 +1,7 @@
 /*
  * @LastEditors: Necfol
  * @Date: 2024-03-19 18:49:40
- * @LastEditTime: 2024-03-19 23:21:01
+ * @LastEditTime: 2024-03-23 17:43:54
  * @FilePath: /portfolio-pro/app/(website)/home.js
  */
 import Container from "@/components/container";
@@ -14,7 +14,9 @@ export default function HomeLifeStyle({ posts }) {
   return (
     <>
       {featuredPost && featuredPost.length && (
-        <Featured post={featuredPost[0]} pathPrefix="lifestyle" />
+        <Featured post={featuredPost[0]} 
+        // pathPrefix="lifestyle" 
+        />
       )}
 
       <Container large>
@@ -33,7 +35,7 @@ export default function HomeLifeStyle({ posts }) {
                   <PostList
                     post={post}
                     preloadImage={true}
-                    pathPrefix="lifestyle"
+                    // pathPrefix="lifestyle"
                     fontSize="large"
                     aspect="custom"
                     fontWeight="normal"
@@ -45,7 +47,7 @@ export default function HomeLifeStyle({ posts }) {
                   key={post._id}
                   post={post}
                   aspect="landscape"
-                  pathPrefix="lifestyle"
+                  // pathPrefix="lifestyle"
                   fontWeight="normal"
                   preloadImage={true}
                 />
@@ -65,7 +67,7 @@ export default function HomeLifeStyle({ posts }) {
               key={post._id}
               post={post}
               fontWeight="normal"
-              pathPrefix="lifestyle"
+              // pathPrefix="lifestyle"
               aspect="square"
             />
           ))}
