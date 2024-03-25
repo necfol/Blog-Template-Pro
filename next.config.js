@@ -1,7 +1,7 @@
 /*
  * @LastEditors: Necfol
  * @Date: 2024-03-20 10:38:38
- * @LastEditTime: 2024-03-25 22:51:06
+ * @LastEditTime: 2024-03-25 23:08:17
  * @FilePath: /Blog-Template-Pro/next.config.js
  */
 /** @type {import('next').NextConfig} */
@@ -28,7 +28,7 @@ const nextConfig = {
     return [
       {
         // matching all API routes
-        source: "/api/:path*",
+        source: "/api/(.*)",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "*" },
