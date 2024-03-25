@@ -1,7 +1,7 @@
 /*
  * @LastEditors: Necfol
  * @Date: 2024-03-20 10:38:38
- * @LastEditTime: 2024-03-25 23:08:17
+ * @LastEditTime: 2024-03-25 23:29:44
  * @FilePath: /Blog-Template-Pro/next.config.js
  */
 /** @type {import('next').NextConfig} */

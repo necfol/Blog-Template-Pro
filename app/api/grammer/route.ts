@@ -1,10 +1,22 @@
 /*
  * @LastEditors: Necfol
  * @Date: 2024-03-25 22:37:06
- * @LastEditTime: 2024-03-25 22:47:42
+ * @LastEditTime: 2024-03-25 23:34:42
  * @FilePath: /Blog-Template-Pro/app/api/grammer/route.ts
  */
 import { NextResponse } from "next/server";
+
+export const corsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type, Authorization",
+};
+
+
+export async function OPTIONS(req: Request) {
+  return NextResponse.json({}, { headers: corsHeaders });
+}
+
 
 export async function POST(req: Request) {
   const params = await req.json()
@@ -23,5 +35,8 @@ export async function POST(req: Request) {
   })
 
   const data = await res.json()
-  return NextResponse.json(data)
+  return NextResponse.json(data, {
+    status: 200,
+    headers: corsHeaders
+  })
 }
