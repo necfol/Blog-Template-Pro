@@ -1,7 +1,7 @@
 /*
  * @LastEditors: Necfol
  * @Date: 2024-03-25 22:37:06
- * @LastEditTime: 2024-03-25 23:34:42
+ * @LastEditTime: 2024-03-25 23:41:20
  * @FilePath: /Blog-Template-Pro/app/api/grammer/route.ts
  */
 import { NextResponse } from "next/server";
@@ -28,7 +28,7 @@ export async function POST(req: Request) {
     body: JSON.stringify({
       contents: [{
         parts: [{
-          text: `帮我检查一下这段话的语法，并且给出建议：${params.text}`
+          text: `Corrects grammar and suggests improvements：${params.text}`
         }]
       }]
     })
