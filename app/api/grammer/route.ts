@@ -1,7 +1,7 @@
 /*
  * @LastEditors: Necfol
  * @Date: 2024-03-25 22:37:06
- * @LastEditTime: 2024-03-25 23:41:20
+ * @LastEditTime: 2024-03-25 23:45:32
  * @FilePath: /Blog-Template-Pro/app/api/grammer/route.ts
  */
 import { NextResponse } from "next/server";
@@ -28,7 +28,7 @@ export async function POST(req: Request) {
     body: JSON.stringify({
       contents: [{
         parts: [{
-          text: `Corrects grammar and suggests improvements：${params.text}`
+          text: `For what I've given you, the grammar needs to be corrected and sound suggestions given for improvement：${params.text}`
         }]
       }]
     })
